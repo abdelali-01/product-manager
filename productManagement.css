@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    color: #000;
+}
+:root{
+    --color-one: #181823;
+    --color-two: #C0EEF2;
+    --color-three: #537FE7;
+    --color-foor: #E9F8F9;
+}
+body {
+    background-color:var(--color-two);
+}
+.container{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+header {
+    text-transform: uppercase;
+    color: #fff;
+    margin: 10px;
+}
+.inputs input , .outputs input {
+    background-color: var(--color-one);
+    width: 100%;
+}
+.inputs input:focus , .outputs input:focus{
+    background-color: var(--color-one);
+    scale: 1.1;
+    color: #fff;
+}
+.inputs .price{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+.inputs .price input ,.inputs .price #total {
+    width: 10%;
+    min-width: 100px ;
+    flex-grow: 1;
+}
+.inputs .price #total {
+    background-color: #de7272;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+}
+.inputs .price #total::before{
+    content: 'Total :';
+}
+
+.inputs input , .outputs input , button {
+   margin: 5px 0;
+   height: 40px;
+   border: none;
+   outline: none;
+   padding-left: 5px;
+   color: #fff;
+   border-radius: 5px;
+}
+.inputs button , .outputs button {
+    background-color: var(--color-three);
+    width: 100%;
+    cursor: pointer;
+    transition: all .5s;
+}
+.inputs button:hover , .outputs button:hover{
+    background-color: var(--color-three);
+    scale: .98;
+    letter-spacing: 1px;
+}
+
+.outputs .search-by{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.outputs .search-by button {
+    width: 45%;
+    min-width: 200px;
+    flex-grow: 1;
+}
+.hide {
+    display: none;
+}
+table{
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    margin: 20px 0;
+}
+table th {
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+table tbody tr td button {
+    background-color: var(--color-three);
+    height: 30px;
+    padding: 0 5px;
+}
+table tbody tr td button:hover{
+    background-color: var(--color-three);
+    scale: .95;
+}
