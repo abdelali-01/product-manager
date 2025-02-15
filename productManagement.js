@@ -25,11 +25,12 @@ function Calculateprice() {
 }
 
 // save data :
-let dataProduct = []  ;
-if(localStorage.product == '' ){
+let dataProduct ;
+let product = localStorage.getItem('product')
+if(!product){
    dataProduct = [] ; 
 }else{
-   dataProduct = JSON.parse(localStorage.product) ;
+   dataProduct = JSON.parse(product) ;
 }
 
 // create product :
